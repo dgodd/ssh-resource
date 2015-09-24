@@ -16,7 +16,7 @@ var checkPath string
 var _ = BeforeSuite(func() {
 	var err error
 
-	checkPath, err = gexec.Build("github.com/concourse/s3-resource/cmd/check")
+	checkPath, err = gexec.Build("github.com/dgodd/ssh-resource/cmd/check")
 	Ω(err).ShouldNot(HaveOccurred())
 })
 

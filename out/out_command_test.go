@@ -8,10 +8,10 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"github.com/concourse/s3-resource"
-	"github.com/concourse/s3-resource/fakes"
+	"github.com/dgodd/ssh-resource"
+	"github.com/dgodd/ssh-resource/fakes"
 
-	. "github.com/concourse/s3-resource/out"
+	. "github.com/dgodd/ssh-resource/out"
 )
 
 var _ = Describe("Out Command", func() {

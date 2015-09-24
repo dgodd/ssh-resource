@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/concourse/s3-resource"
-	"github.com/concourse/s3-resource/in"
+	"github.com/dgodd/ssh-resource"
+	"github.com/dgodd/ssh-resource/in"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

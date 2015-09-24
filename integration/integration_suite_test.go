@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/concourse/s3-resource"
+	"github.com/dgodd/ssh-resource"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gexec"
@@ -34,11 +34,11 @@ type suiteData struct {
 }
 
 var _ = SynchronizedBeforeSuite(func() []byte {
-	checkPath, err := gexec.Build("github.com/concourse/s3-resource/cmd/check")
+	checkPath, err := gexec.Build("github.com/dgodd/ssh-resource/cmd/check")
 	Ω(err).ShouldNot(HaveOccurred())
-	inPath, err := gexec.Build("github.com/concourse/s3-resource/cmd/in")
+	inPath, err := gexec.Build("github.com/dgodd/ssh-resource/cmd/in")
 	Ω(err).ShouldNot(HaveOccurred())
-	outPath, err := gexec.Build("github.com/concourse/s3-resource/cmd/out")
+	outPath, err := gexec.Build("github.com/dgodd/ssh-resource/cmd/out")
 	Ω(err).ShouldNot(HaveOccurred())
 
 	data, err := json.Marshal(suiteData{

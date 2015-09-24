@@ -4,8 +4,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/concourse/s3-resource"
-	"github.com/concourse/s3-resource/versions"
+	"github.com/dgodd/ssh-resource"
+	"github.com/dgodd/ssh-resource/versions"
 )
 
 type CheckCommand struct {

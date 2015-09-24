@@ -1,7 +1,7 @@
 package versions_test
 
 import (
-	"github.com/concourse/s3-resource/versions"
+	"github.com/dgodd/ssh-resource/versions"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

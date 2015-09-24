@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/concourse/s3-resource"
+	"github.com/dgodd/ssh-resource"
 	"github.com/hashicorp/go-version"
 )
 

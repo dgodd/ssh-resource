@@ -1,6 +1,6 @@
 package check
 
-import "github.com/concourse/s3-resource"
+import "github.com/dgodd/ssh-resource"
 
 type CheckRequest struct {
 	Source  s3resource.Source  `json:"source"`

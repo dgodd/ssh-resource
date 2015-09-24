@@ -225,7 +225,8 @@ func (client *s3client) UploadFile(bucketName string, remotePath string, localPa
 
 	defer localFile.Close()
 
-	uploadOutput, err := uploader.Upload(&s3manager.UploadInput{
+	// uploadOutput, err := uploader.Upload(&s3manager.UploadInput{
+	_, err = uploader.Upload(&s3manager.UploadInput{
 		Bucket: aws.String(bucketName),
 		Key:    aws.String(remotePath),
 		Body:   localFile,
@@ -234,9 +235,9 @@ func (client *s3client) UploadFile(bucketName string, remotePath string, localPa
 		return "", err
 	}
 
-	if uploadOutput.VersionID != nil {
-		return *uploadOutput.VersionID, nil
-	}
+	// if uploadOutput.VersionID != nil {
+	// return *uploadOutput.VersionID, nil
+	// }
 
 	return "", nil
 }

@@ -1,6 +1,6 @@
 package in
 
-import "github.com/concourse/s3-resource"
+import "github.com/dgodd/ssh-resource"
 
 type InRequest struct {
 	Source  s3resource.Source  `json:"source"`

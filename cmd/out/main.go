@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"os"
 
-	"github.com/concourse/s3-resource"
-	"github.com/concourse/s3-resource/out"
+	"github.com/dgodd/ssh-resource"
+	"github.com/dgodd/ssh-resource/out"
 )
 
 func main() {
